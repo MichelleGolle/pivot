@@ -37,10 +37,7 @@ class UsersController < ApplicationController
   end
 
   def update
-<<<<<<< HEAD
-=======
-# 
->>>>>>> dfe901e02f6af851326dfd22019a1a95e0601e88
+
     @user = User.find_by(id: params[:id].to_i)
     if @user.update(user_params)
       flash.now[:success] = "#{@user.username} successfully updated"
